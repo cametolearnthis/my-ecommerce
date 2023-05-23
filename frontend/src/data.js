@@ -6,7 +6,7 @@ const data = {
             category: 'Videogames',
             image: '/images/pokemon-gold-gb.jpg',
             price: 15,
-            countInStock: 3,
+            countInStock: 0,
             brand: 'Nintendo',
             rating: 4.8,
             numReviews: 12,

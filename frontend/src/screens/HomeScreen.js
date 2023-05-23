@@ -5,6 +5,7 @@ import logger from 'use-reducer-logger';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Product from '../components/Product';
+import { Helmet } from 'react-helmet-async';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -30,10 +31,10 @@ function HomeScreen() {
     const fetchData = async () => {
       dispatch({ type: 'FETCH_REQUEST' });
       try {
-        const result = await axios.get('api/products');
+        const result = await axios.get('/api/products');
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
-      } catch {
-        dispatch({ type: 'FETCH_FAIL', payload: error.message });
+      } catch (err) {
+        dispatch({ type: 'FETCH_FAIL', payload: err.message });
       }
 
       // setProducts(result.data);
@@ -42,7 +43,11 @@ function HomeScreen() {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>GeekCave</title>
+      </Helmet>
       <h1>Featured Products</h1>
+
       <div className="products">
         {loading ? (
           <div>Loading...</div>
