@@ -32,7 +32,7 @@ const data = {
             price: 40,
             countInStock: 4,
             brand: 'Nintendo',
-            rating: 4.2,
+            rating: 3.5,
             numReviews: 54,
             description: 'Never stop playing!'
         }
