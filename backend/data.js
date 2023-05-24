@@ -1,7 +1,7 @@
 const data = {
     products: [
         {
-            _id: '1',
+            //_id: '1',
             name: 'Pokemon Gold Game Boy',
             slug: 'pokemon-gold-gb',
             category: 'Videogames',
@@ -14,7 +14,7 @@ const data = {
             description: 'enjoy'
         },
         {
-            _id: '2',
+            //_id: '2',
             name: 'Game Boy Color',
             slug: 'game-boy-color',
             category: 'Videogames',
@@ -27,7 +27,7 @@ const data = {
             description: 'Wanna be a child again?'
         },
         {
-            _id: '3',
+           // _id: '3',
             name: 'Game Boy Advance',
             slug: 'game-boy-advance',
             category: 'Videogames',
