@@ -1,5 +1,25 @@
 {
   "dependencies": {
     "bcryptjs": "^2.4.3"
-  }
+  },
+  "name": "my-ecommerce",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "cd backend && npm install & cd ../frontend && npm install & npm run build",
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cametolearnthis/my-ecommerce.git"
+  },
+  "author": "Jorge Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cametolearnthis/my-ecommerce/issues"
+  },
+  "homepage": "https://github.com/cametolearnthis/my-ecommerce#readme"
 }
